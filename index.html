@@ -61,8 +61,8 @@
     		    var url = document.querySelector("#url");
     		    url =  url.value.split("/")
     		    var value_ = url[url.length-1].slice(1)
-    		     let pre_url = "https://terabox-backend.onrender.com/get_data?url="
-		    fetch(pre_url+encodeURIComponent("https://www.4funbox.com/share/list?app_id=250528&web=1&clienttype=0&page=1&num=20&order=time&desc=1&site_referer=&root=1&shorturl="+value_),{headers: {
+    		     let pre_url = "https://terabox-backend.onrender.com/get_data?url="+value_;
+		    fetch(pre_url,{headers: {
     'Connection': 'keep-alive',
     'Cache-Control': 'max-age=0',
     'Upgrade-Insecure-Requests': '1',
